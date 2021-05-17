@@ -7,8 +7,13 @@ header {
   align-items: center;
   background-image: url('../images/header-background.png');
   background-color: #c26400;
+  color: white;
 }
 
 .username {
   margin: 0;
+}
+
+.username > span {
+  font-weight: 300;
 }
