@@ -5,7 +5,8 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: orangered;
+  background-image: url('../images/header-background.png');
+  background-color: #c26400;
 }
 
 .username {
