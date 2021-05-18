@@ -18,18 +18,6 @@ form > label {
   text-align: left;
 }
 
-#tweet-text {
-  height: 2em;
-  padding: .4rem 0 2em .2em;
-  background-color: inherit;
-  border: none;
-  border-bottom: 4px solid #545149;
-  outline: none;
-  font-size: 18px;
-  font-weight: 600;
-  overflow: hidden;
-}
-
 form > label {
   font-weight: 600;
 }
@@ -40,6 +28,18 @@ form > div {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+}
+
+#tweet-text {
+  height: 2em;
+  padding: .4rem 0 2em .2em;
+  background-color: inherit;
+  border: none;
+  border-bottom: 4px solid #545149;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  overflow: hidden;
 }
 
 .btn {
