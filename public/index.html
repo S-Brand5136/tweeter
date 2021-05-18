@@ -51,12 +51,17 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <button>hello</button>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam id distinctio voluptatem, sint commodi
-      porro, perspiciatis, animi tempora architecto corrupti consequuntur rem. Ipsam iure quia exercitationem.
-      Voluptates nulla reiciendis cumque!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officia explicabo odio unde corporis modi
-      porro saepe repudiandae rem doloremque dolores pariatur id, tempora rerum eius quas facere, itaque incidunt?</p>
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form>
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
   </main>
 </body>
 
