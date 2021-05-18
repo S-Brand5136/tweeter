@@ -33,9 +33,8 @@ form > label {
   background-color: inherit;
   font-size: 18px;
   font-weight: 600;
-  height: 1.5em;
   outline: none;
-  padding: 0.4rem 0 2em 0.2em;
+  overflow-y: auto;
   resize: none;
 }
 
