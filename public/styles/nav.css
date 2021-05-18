@@ -1,11 +1,11 @@
 nav {
-  height: 120px;
-  width: 100vw;
+  align-items: center;
   background-color: #4056A1;
   color: #fff;
   display: flex;
-  align-items: center;
+  height: 120px;
   justify-content: space-between;
+  width: 100vw;
   padding: 0 1.5em 0 1.5em;
   z-index: 1;
 }
@@ -16,9 +16,9 @@ nav > span {
 }
 
 nav > div {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .icon {

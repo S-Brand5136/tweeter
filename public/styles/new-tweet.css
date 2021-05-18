@@ -7,11 +7,19 @@
 }
 
 form {
-  font-family: 'Source Sans Pro', sans-serif;
   display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+}
+
+form > div {
+  align-items: start;
+  display: flex;
+  font-family: 'Bungee', sans-serif, cursive;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 form > label {
@@ -22,29 +30,21 @@ form > label {
   font-weight: 600;
 }
 
-form > div {
-  font-family: 'Bungee', sans-serif, cursive;
-  align-items: start;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-
 #tweet-text {
-  height: 2em;
-  padding: .4rem 0 2em .2em;
-  background-color: inherit;
   border: none;
   border-bottom: 4px solid #545149;
-  outline: none;
+  background-color: inherit;
   font-size: 18px;
   font-weight: 600;
+  height: 2em;
+  outline: none;
   overflow: hidden;
+  padding: .4rem 0 2em .2em;
 }
 
 .btn {
   background-color: #4056A1;
+  border: none;
   color: white;
   padding: .3rem .8rem .3rem .8rem;
-  border: none;
 }

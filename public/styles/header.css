@@ -1,13 +1,13 @@
 header { 
-  height: 400px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   background-image: url('../images/header-background.png');
   background-color: #c26400;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 400px;
+  width: 100vw;
 }
 
 .username {
