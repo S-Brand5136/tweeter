@@ -1,4 +1,4 @@
-header { 
+.user-info {
   align-items: center;
   background-image: url('../images/header-background.png');
   background-color: #c26400;
@@ -10,10 +10,10 @@ header {
   width: 100vw;
 }
 
-.username {
+.user-info > div > h2 {
   margin: 0;
 }
 
-.username > span {
+.user-info > span {
   font-weight: 300;
 }
