@@ -24,9 +24,6 @@ form > div {
 
 form > label {
   text-align: left;
-}
-
-form > label {
   font-weight: 600;
 }
 
@@ -36,16 +33,19 @@ form > label {
   background-color: inherit;
   font-size: 18px;
   font-weight: 600;
-  height: 2em;
+  height: 1.5em;
   outline: none;
-  overflow: hidden;
-  padding: .4rem 0 2em .2em;
+  padding: 0.4rem 0 2em 0.2em;
   resize: none;
 }
 
 .btn {
-  background-color: #4056A1;
+  background-color: #4056a1;
   border: none;
   color: white;
-  padding: .3rem .8rem .3rem .8rem;
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+}
+
+.error {
+  color: red;
 }
