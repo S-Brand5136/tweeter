@@ -30,6 +30,18 @@ $(document).ready(() => {
     },
   ];
 
+  $('form').on('submit', function (event) {
+    event.preventDefault();
+    const $serializedData = $(this).serialize();
+    $(this).children('textarea').val('');
+
+    $.ajax({ url: '/tweets', method: 'POST', data: $serializedData }).done(
+      () => {
+        console.log('done!');
+      }
+    );
+  });
+
   const renderTweets = (tweets) => {
     return tweets.forEach((tweet) => {
       const $tweet = createTweetElement(tweet);
