@@ -6,5 +6,5 @@
 
 $(document).ready(() => {
   const time = timeago.format(1621128482905);
-  $('#tweetTime').text(time);
+  $('.tweet-time').text(time);
 });

@@ -1,4 +1,4 @@
-.new-tweet {
+section.new-tweet {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,7 +23,7 @@ form > label {
   font-weight: 600;
 }
 
-#tweet-text {
+textarea#tweet-text {
   border: none;
   border-bottom: 4px solid #545149;
   background-color: inherit;
@@ -34,7 +34,7 @@ form > label {
   resize: none;
 }
 
-.btn {
+button.btn {
   background-color: #4056a1;
   border: none;
   color: white;

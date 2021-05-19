@@ -6,7 +6,7 @@ nav {
   height: 120px;
   justify-content: space-between;
   width: 100%;
-  padding: 0 1.5em 0 1.5em;
+  padding: 1.5em 1.5em 0 1.5em;
   z-index: 1;
   position: sticky;
   top: 0;
@@ -23,6 +23,6 @@ nav > div {
   flex-direction: column;
 }
 
-.icon {
+i.icon {
   color: orangered;
 }
