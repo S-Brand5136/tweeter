@@ -30,6 +30,7 @@ $(document).ready(() => {
     },
   ];
 
+  // POST: tweet submission to /tweets
   $('form').on('submit', function (event) {
     event.preventDefault();
     const $serializedData = $(this).serialize();
@@ -42,6 +43,7 @@ $(document).ready(() => {
     );
   });
 
+  // Create and add database tweets to tweet-container
   const renderTweets = (tweets) => {
     return tweets.forEach((tweet) => {
       const $tweet = createTweetElement(tweet);
