@@ -8,10 +8,8 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
-  <!-- Google font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-  <!-- Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     referrerpolicy="no-referrer" />
 
@@ -24,6 +22,7 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.full.min.js"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="./scripts/client.js"></script>
@@ -77,7 +76,7 @@
         <p>Tweet information goes here</p>
       </section>
       <footer>
-        <span>10 days ago</span>
+        <span id="tweetTime"></span>
         <div>
           <button class="btn-icon"><i class="fas fa-flag"></i></button>
           <button class="btn-icon"><i class="fas fa-retweet"></i></button>
