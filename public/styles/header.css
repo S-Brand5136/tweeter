@@ -1,4 +1,4 @@
-header.user-info {
+header.site-header {
   align-items: center;
   background-image: url('../images/header-background.png');
   background-color: #c26400;
@@ -9,10 +9,10 @@ header.user-info {
   width: 100%;
 }
 
-header.user-info > div > h2 {
+header.site-header > div > h2 {
   margin: 0;
 }
 
-header.user-info > div > h2 > span {
+header.site-header > div > h2 > span {
   font-weight: 300;
 }

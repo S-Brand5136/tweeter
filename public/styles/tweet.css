@@ -1,3 +1,5 @@
+/*   MAIN ARTICLE TAG RULES    */
+
 article.tweet {
   border: 4px solid #545149;
   display: flex;
@@ -15,6 +17,8 @@ article.tweet > section {
   padding: 0 1em 0 1em;
 }
 
+/*  HEADER RULES  */
+
 article.tweet > header {
   align-items: center;
   display: flex;
@@ -31,7 +35,7 @@ span.username {
   margin-left: 0.5em;
 }
 
-#profile-pic {
+img#profile-img {
   height: 50px;
 }
 
@@ -42,6 +46,8 @@ span.tweeter-handle {
   letter-spacing: 0.1px;
   opacity: 0.3;
 }
+
+/*  FOOTER RULES  */
 
 article.tweet > footer {
   display: flex;
