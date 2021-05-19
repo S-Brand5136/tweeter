@@ -65,7 +65,7 @@ $(document).ready(() => {
         <span class="tweeter-handle">${user.handle}</span>
       </header>
       <section>
-        <p>${content.text}</p>
+        <p>${escape(content.text)}</p>
       </section>
       <footer>
         <span class="tweet-time">${timeago.format(created_at)}</span>
@@ -78,6 +78,12 @@ $(document).ready(() => {
     </article> `);
 
     return $tweet;
+  };
+
+  const escape = function (str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
   };
   loadTweets();
 });
