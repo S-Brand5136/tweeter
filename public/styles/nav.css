@@ -1,11 +1,11 @@
 nav {
   align-items: center;
-  background-color: #4056A1;
+  background-color: #4056a1;
   color: #fff;
   display: flex;
   height: 120px;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding: 0 1.5em 0 1.5em;
   z-index: 1;
 }

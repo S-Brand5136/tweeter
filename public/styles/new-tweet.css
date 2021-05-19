@@ -3,19 +3,16 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: auto;
+  margin-bottom: 2.5em;
 }
 
 form {
   display: flex;
-  font-family: 'Source Sans Pro', sans-serif;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
 }
 
 form > div {
-  align-items: start;
   display: flex;
   font-family: 'Bungee', sans-serif, cursive;
   justify-content: space-between;
@@ -23,7 +20,6 @@ form > div {
 }
 
 form > label {
-  text-align: left;
   font-weight: 600;
 }
 

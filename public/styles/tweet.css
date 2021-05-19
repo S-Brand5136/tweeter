@@ -1,2 +1,63 @@
 .tweet {
+  border: 3px solid #545149;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding: 8px;
+}
+
+.tweet:hover {
+  box-shadow: 5px 5px 0px rgba(64, 86, 161, 0.3);
+}
+
+.tweet > section {
+  border-bottom: 3px solid #545149;
+  padding: 0 1em 0 1em;
+}
+
+.tweet > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.tweet > header > div {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin-left: 0.5em;
+}
+
+#profile-pic {
+  height: 50px;
+}
+
+.tweeter-handle {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  color: #4056a1;
+  opacity: 0.3;
+}
+
+.tweet > footer {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  padding: 12px 18px;
+}
+
+.btn-icon {
+  border: none;
+  color: #4056a1;
+  font-size: 16px;
+  transition: color 0.2s ease-in;
+}
+
+.btn-icon:hover {
+  color: #c26400;
+  cursor: pointer;
 }
