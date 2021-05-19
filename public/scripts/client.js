@@ -5,43 +5,41 @@
  */
 
 $(document).ready(() => {
-  const data = [
-    {
-      user: {
-        name: 'Newton',
-        avatars: 'https://i.imgur.com/73hZDYK.png',
-        handle: '@SirIsaac',
-      },
-      content: {
-        text: 'If I have seen further it is by standing on the shoulders of giants',
-      },
-      created_at: 1461116232227,
-    },
-    {
-      user: {
-        name: 'Descartes',
-        avatars: 'https://i.imgur.com/nlhLi3I.png',
-        handle: '@rd',
-      },
-      content: {
-        text: 'Je pense , donc je suis',
-      },
-      created_at: 1461113959088,
-    },
-  ];
-
   // POST: tweet submission to /tweets
   $('form').on('submit', function (event) {
     event.preventDefault();
-    const $serializedData = $(this).serialize();
-    $(this).children('textarea').val('');
+    const $textarea = $(this).children('textarea');
 
-    $.ajax({ url: '/tweets', method: 'POST', data: $serializedData }).done(
-      () => {
+    if ($textarea.val().length > 140) {
+      return alert('Whoa, I cant tweet that out! its too long!');
+    }
+
+    if ($textarea.val().length === 0) {
+      return alert('Whoa, I cant tweet that out! its too short!');
+    }
+
+    const $serializedData = $(this).serialize();
+    $textarea.val('');
+
+    $.ajax({ url: '/tweets', method: 'POST', data: $serializedData })
+      .then(() => {
         console.log('done!');
-      }
-    );
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   });
+
+  // GET: tweets from database
+  const loadTweets = () => {
+    $.ajax({ method: 'GET', url: '/tweets', dataType: 'json' })
+      .then((data) => {
+        renderTweets(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   // Create and add database tweets to tweet-container
   const renderTweets = (tweets) => {
@@ -78,5 +76,5 @@ $(document).ready(() => {
     return $tweet;
   };
 
-  renderTweets(data);
+  loadTweets();
 });
