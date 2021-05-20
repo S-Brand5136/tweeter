@@ -11,11 +11,17 @@ $(document).ready(() => {
     const $textarea = $(this).children('textarea');
 
     if ($textarea.val().length > 140) {
-      return alert('Whoa, I cant tweet that out! its too long!');
+      $('#error-message').text('Error. Your tweet is too long!');
+      return $('#error-message').slideDown('slow');
     }
 
     if ($textarea.val().length === 0) {
-      return alert('Whoa, I cant tweet that out! its too short!');
+      $('#error-message').text('Error. Your tweet is too short! please add some tweet!');
+      return $('#error-message').slideDown('slow');
+    }
+
+    if (!$('#error-message').is(':hidden')) {
+      $('#error-message').slideUp();
     }
 
     const $serializedData = $(this).serialize();
