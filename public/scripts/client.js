@@ -86,10 +86,19 @@ $(document).ready(() => {
     return $tweet;
   };
 
+  // function to escape harmful tweet text
   const escape = function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+
+  $('#compose-tweet').on('click', function() {
+    if (!$('.new-tweet').is(':hidden')) {
+      return $('.new-tweet').slideUp();
+    }
+    $('.new-tweet').slideDown();
+  })
+
   loadTweets();
 });
