@@ -78,62 +78,53 @@ article.tweet {
   flex-direction: column;
   margin-bottom: 1em;
   padding: 8px;
+  /*  HEADER RULES  */
+  /*  FOOTER RULES  */
 }
-
-article.tweet:hover {
-  box-shadow: 5px 5px 0px rgba(64, 86, 161, 0.3);
-}
-
-article.tweet > section {
+article.tweet section {
   border-bottom: 4px solid #545149;
   padding: 0 1em 0 1em;
 }
-
-/*  HEADER RULES  */
-article.tweet > header {
+article.tweet header {
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 16px;
 }
-
-article.tweet > header > div {
+article.tweet header span.username {
+  margin-left: 0.5em;
+}
+article.tweet header div {
   align-items: center;
   display: flex;
 }
-
-span.username {
-  margin-left: 0.5em;
-}
-
-img#profile-img {
+article.tweet header div img#profile-img {
   height: 50px;
 }
-
-span.tweeter-handle {
+article.tweet header .tweeter-handle {
   color: #4056a1;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.1px;
   opacity: 0.3;
 }
-
-/*  FOOTER RULES  */
-article.tweet > footer {
+article.tweet footer {
   display: flex;
   font-size: 16px;
   justify-content: space-between;
   padding: 12px 30px;
 }
-
-button.btn-icon {
+article.tweet footer button.btn-icon {
   border: none;
   color: #4056a1;
   font-size: 16px;
   transition: color 0.2s ease-in;
 }
-
-button.btn-icon:hover {
+article.tweet footer button.btn-icon:hover {
   color: #c26400;
   cursor: pointer;
+}
+
+article.tweet:hover {
+  box-shadow: 5px 5px 0px rgba(64, 86, 161, 0.3);
 }

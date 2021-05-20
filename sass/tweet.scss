@@ -8,64 +8,63 @@ article.tweet {
   flex-direction: column;
   margin-bottom: 1em;
   padding: 8px;
+  
+  section {
+    border-bottom: 4px solid layout.$border-primary;
+    padding: 0 1em 0 1em;
+  }
+  
+  /*  HEADER RULES  */
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    
+    span.username {
+      margin-left: 0.5em;
+    }
+    
+    div {
+      align-items: center;
+      display: flex;
+      
+      img#profile-img {
+        height: 50px;
+      }
+    }
+
+    .tweeter-handle {
+      color: layout.$primary;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 0.1px;
+      opacity: 0.3;
+    }
+  }
+  
+
+  /*  FOOTER RULES  */
+  footer {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 12px 30px;
+    
+    button.btn-icon {
+      border: none;
+      color: layout.$primary;
+      font-size: 16px;
+      transition: color 0.2s ease-in;
+    }
+    
+    button.btn-icon:hover {
+      color: layout.$bg-secondary;
+      cursor: pointer;
+    }
+  }
 }
 
 article.tweet:hover {
   box-shadow: 5px 5px 0px layout.$tweet-hover;
-}
-
-article.tweet > section {
-  border-bottom: 4px solid layout.$border-primary;
-  padding: 0 1em 0 1em;
-}
-
-/*  HEADER RULES  */
-
-article.tweet > header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-}
-
-article.tweet > header > div {
-  align-items: center;
-  display: flex;
-}
-
-span.username {
-  margin-left: 0.5em;
-}
-
-img#profile-img {
-  height: 50px;
-}
-
-span.tweeter-handle {
-  color: layout.$primary;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 0.1px;
-  opacity: 0.3;
-}
-
-/*  FOOTER RULES  */
-
-article.tweet > footer {
-  display: flex;
-  font-size: 16px;
-  justify-content: space-between;
-  padding: 12px 30px;
-}
-
-button.btn-icon {
-  border: none;
-  color: layout.$primary;
-  font-size: 16px;
-  transition: color 0.2s ease-in;
-}
-
-button.btn-icon:hover {
-  color: layout.$bg-secondary;
-  cursor: pointer;
 }
