@@ -1,3 +1,76 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+* Global layout stuff
+*/
+body {
+  background-color: #f4f1ec;
+  color: #545149;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+@media only screen and (min-width: 1024px) {
+  div > i.icon {
+    animation: none;
+  }
+
+  header.site-header {
+    float: left;
+    margin: 10em 0 0 5rem;
+    width: 25%;
+    min-width: 300px;
+  }
+
+  main.container {
+    float: right;
+    margin: 10em 5rem 0 0;
+    width: 50%;
+  }
+
+  main > section.new-tweet {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body > nav {
+    background-color: transparent;
+  }
+
+  nav > img {
+    height: 200px;
+  }
+
+  header.site-header {
+    padding-top: 140px;
+    height: 540px;
+  }
+
+  section.new-tweet > span#error-message {
+    font-size: 12px;
+  }
+}
 nav {
   align-items: center;
   background-color: #4056a1;
@@ -10,34 +83,30 @@ nav {
   z-index: 1;
   position: fixed;
   top: 0;
+  font-family: "Bungee", sans-serif, cursive;
 }
-
-nav > span {
-  font-family: 'Bungee', sans-serif, cursive;
+nav span {
   font-size: 1.5em;
 }
-
-nav > div {
+nav div {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.7em;
 }
-
-i.icon {
+nav i.icon {
   animation: 1.2s infinite alternate hover;
-  color: orangered;
+  color: #ff4500;
   position: relative;
 }
-
-i.icon:hover {
+nav i.icon:hover {
   cursor: pointer;
 }
-
 @keyframes hover {
   from {
     top: 8px;
   }
-
   to {
     top: 0;
   }

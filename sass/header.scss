@@ -1,0 +1,24 @@
+@use 'layout';
+
+.site-header {
+  align-items: center;
+  background-image: url('../images/header-background.png');
+  background-color: layout.$bg-secondary;
+  color: layout.$font-highlight;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin-bottom: 3rem;
+  width: 100%;
+
+  div {
+    h2 {
+      margin: 0;
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+  
+}

@@ -1,5 +1,77 @@
-/* MAIN RULES */
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+* Global layout stuff
+*/
+body {
+  background-color: #f4f1ec;
+  color: #545149;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+@media only screen and (min-width: 1024px) {
+  div > i.icon {
+    animation: none;
+  }
+
+  header.site-header {
+    float: left;
+    margin: 10em 0 0 5rem;
+    width: 25%;
+    min-width: 300px;
+  }
+
+  main.container {
+    float: right;
+    margin: 10em 5rem 0 0;
+    width: 50%;
+  }
+
+  main > section.new-tweet {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  body > nav {
+    background-color: transparent;
+  }
+
+  nav > img {
+    height: 200px;
+  }
+
+  header.site-header {
+    padding-top: 140px;
+    height: 540px;
+  }
+
+  section.new-tweet > span#error-message {
+    font-size: 12px;
+  }
+}
+/* MAIN RULES */
 section.new-tweet {
   display: none;
   justify-content: center;
@@ -9,7 +81,6 @@ section.new-tweet {
 }
 
 /* FORM RULES */
-
 form {
   display: flex;
   flex-direction: column;
@@ -18,7 +89,7 @@ form {
 
 form > div {
   display: flex;
-  font-family: 'Bungee', sans-serif, cursive;
+  font-family: "Bungee", sans-serif, cursive;
   justify-content: space-between;
   margin-top: 1rem;
 }
@@ -53,7 +124,7 @@ h3#error-message {
   background-color: red;
   color: white;
   display: none;
-  font-family: 'Bungee', sans-serif, cursive;
+  font-family: "Bungee", sans-serif, cursive;
   font-size: 1rem;
   text-align: center;
   padding: 0.75em 1em 0.75em 1em;
@@ -63,7 +134,6 @@ h3#error-message {
 }
 
 /* applied when textarea is invalid  */
-
 .error {
   color: red;
 }
