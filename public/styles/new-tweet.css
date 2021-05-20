@@ -79,48 +79,7 @@ section.new-tweet {
   align-items: center;
   margin-bottom: 2.5em;
 }
-
-/* FORM RULES */
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-form > div {
-  display: flex;
-  font-family: "Bungee", sans-serif, cursive;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-form > label {
-  font-weight: 600;
-}
-
-textarea#tweet-text {
-  border: none;
-  border-bottom: 4px solid #545149;
-  background-color: inherit;
-  font-size: 18px;
-  font-weight: 600;
-  outline: none;
-  overflow-y: auto;
-  resize: none;
-}
-
-button.btn {
-  background-color: #4056a1;
-  border: none;
-  color: white;
-  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
-}
-
-button.btn:focus {
-  box-shadow: 0 0 0 4px rgba(64, 86, 161, 0.5);
-}
-
-h3#error-message {
+section.new-tweet h3#error-message {
   background-color: red;
   color: white;
   display: none;
@@ -132,8 +91,41 @@ h3#error-message {
   border-radius: 0.5rem;
   width: 100%;
 }
+section.new-tweet form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+section.new-tweet form div {
+  display: flex;
+  font-family: "Bungee", sans-serif, cursive;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+section.new-tweet form div button.btn {
+  background-color: #4056a1;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+}
+section.new-tweet form div button.btn:focus {
+  box-shadow: 0 0 0 4px rgba(64, 86, 161, 0.5);
+}
+section.new-tweet form label {
+  font-weight: 600;
+}
+section.new-tweet form textarea#tweet-text {
+  border: none;
+  border-bottom: 4px solid #545149;
+  background-color: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  overflow-y: auto;
+  resize: none;
+}
 
-/* applied when textarea is invalid  */
+/* applied to output when textarea is invalid  */
 .error {
   color: red;
 }

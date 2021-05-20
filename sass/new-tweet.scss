@@ -8,64 +8,64 @@ section.new-tweet {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2.5em;
+  
+  h3#error-message {
+    background-color: layout.$error;
+    color: white;
+    display: none;
+    font-family: layout.$secondary-font;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.75em 1em 0.75em 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    div {
+      display: flex;
+      font-family: layout.$secondary-font;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      button.btn {
+        background-color: layout.$primary;
+        border: none;
+        color: white;
+        padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+      }
+      
+      button.btn:focus {
+        box-shadow: 0 0 0 4px layout.$border-secondary;
+      }
+   }
+   
+    label {
+     font-weight: 600;
+   }
+
+   textarea#tweet-text {
+     border: none;
+     border-bottom: 4px solid layout.$border-primary;
+     background-color: inherit;
+     font-size: 18px;
+     font-weight: 600;
+     outline: none;
+     overflow-y: auto;
+     resize: none;
+   }
+  }
+
+  
+
 }
 
-/* FORM RULES */
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-form > div {
-  display: flex;
-  font-family: layout.$secondary-font;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-form > label {
-  font-weight: 600;
-}
-
-textarea#tweet-text {
-  border: none;
-  border-bottom: 4px solid layout.$border-primary;
-  background-color: inherit;
-  font-size: 18px;
-  font-weight: 600;
-  outline: none;
-  overflow-y: auto;
-  resize: none;
-}
-
-button.btn {
-  background-color: layout.$primary;
-  border: none;
-  color: white;
-  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
-}
-
-button.btn:focus {
-  box-shadow: 0 0 0 4px layout.$border-secondary;
-}
-
-h3#error-message {
-  background-color: layout.$error;
-  color: white;
-  display: none;
-  font-family: layout.$secondary-font;
-  font-size: 1rem;
-  text-align: center;
-  padding: 0.75em 1em 0.75em 1em;
-  margin-bottom: 1em;
-  border-radius: 0.5rem;
-  width: 100%;
-}
-
-/* applied when textarea is invalid  */
-
+/* applied to output when textarea is invalid  */
 .error {
   color: layout.$error;
 }
