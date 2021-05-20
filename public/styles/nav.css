@@ -24,5 +24,21 @@ nav > div {
 }
 
 i.icon {
+  animation: 1.2s infinite alternate hover;
   color: orangered;
+  position: relative;
+}
+
+i.icon:hover {
+  cursor: pointer;
+}
+
+@keyframes hover {
+  from {
+    top: 8px;
+  }
+
+  to {
+    top: 0;
+  }
 }

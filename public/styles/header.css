@@ -6,6 +6,7 @@ header.site-header {
   display: flex;
   flex-direction: column;
   height: 400px;
+  margin-bottom: 3rem;
   width: 100%;
 }
 

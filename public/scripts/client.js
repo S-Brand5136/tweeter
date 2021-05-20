@@ -6,7 +6,7 @@
 
 $(document).ready(() => {
   // POST: tweet submission to /tweets
-  $('form').on('submit', function (event) {
+  $('form').on('submit', function(event) {
     event.preventDefault();
     const $textarea = $(this).children('textarea');
 
@@ -86,10 +86,19 @@ $(document).ready(() => {
     return $tweet;
   };
 
-  const escape = function (str) {
+  // function to escape harmful tweet text
+  const escape = function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+
+  $('#compose-tweet').on('click', function() {
+    if (!$('.new-tweet').is(':hidden')) {
+      return $('.new-tweet').slideUp();
+    }
+    $('.new-tweet').slideDown();
+  })
+
   loadTweets();
 });
