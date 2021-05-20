@@ -38,26 +38,23 @@
     <span>tweeter</span>
     <div>
       <span><strong>Write</strong> a new tweet</span>
-      <button class="btn" id="compose-tweet">
-        <i class="fas fa-angle-double-down icon"></i>
-      </button>
+      <i id="compose-tweet" class="fas fa-angle-double-down icon"></i>
     </div>
   </nav>
-
   <header class="site-header">
     <div>
       <img src="/images/profile-hex.png">
     </div>
     <br>
     <div>
-      <h2>Your <span>Name</span></h2>
+      <h2>Brandon <span>Shemilt</span></h2>
     </div>
   </header>
 
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <span id="error-message"></span>
+      <h3 id="error-message"></h3>
       <form method="POST" action="/tweets/">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>

@@ -16,7 +16,7 @@ $(document).ready(() => {
     }
 
     if ($textarea.val().length === 0) {
-      $('#error-message').text('Error. Your tweet is too short! please add some tweet!');
+      $('#error-message').text('Error. Your tweet is too short!');
       return $('#error-message').slideDown('slow');
     }
 

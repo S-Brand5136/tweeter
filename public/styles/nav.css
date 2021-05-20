@@ -6,15 +6,15 @@ nav {
   height: 120px;
   justify-content: space-between;
   width: 100%;
-  padding: 1.5em 1.5em 0 1.5em;
+  padding: 1em 1.5em 0 1.5em;
   z-index: 1;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
 nav > span {
   font-family: 'Bungee', sans-serif, cursive;
-  font-size: 42px;
+  font-size: 1.5em;
 }
 
 nav > div {

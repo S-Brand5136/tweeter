@@ -1,4 +1,4 @@
-header.site-header {
+.site-header {
   align-items: center;
   background-image: url('../images/header-background.png');
   background-color: #c26400;
@@ -6,14 +6,15 @@ header.site-header {
   display: flex;
   flex-direction: column;
   height: 400px;
+  justify-content: center;
   margin-bottom: 3rem;
   width: 100%;
 }
 
-header.site-header > div > h2 {
+.site-header > div > h2 {
   margin: 0;
 }
 
-header.site-header > div > h2 > span {
+.site-header > div > h2 > span {
   font-weight: 300;
 }
