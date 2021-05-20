@@ -6,7 +6,7 @@
 
 $(document).ready(() => {
   // POST: tweet submission to /tweets
-  $('form').on('submit', function (event) {
+  $('form').on('submit', function(event) {
     event.preventDefault();
     const $textarea = $(this).children('textarea');
 
@@ -86,7 +86,7 @@ $(document).ready(() => {
     return $tweet;
   };
 
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
