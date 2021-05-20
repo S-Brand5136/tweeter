@@ -98,6 +98,7 @@ $(document).ready(() => {
       return $('.new-tweet').slideUp();
     }
     $('.new-tweet').slideDown();
+    $('#tweet-text').focus();
   })
 
   loadTweets();
