@@ -14,15 +14,15 @@ This project was created to practice my HTML, CSS, JS, jQuery and AJAX front-end
 
 ## Dependencies used <a name='dependencies'></a>
 
-- [Node.js]('https://www.nodejs.org/en/')
-- [Express]('https://www.expressjs.com/')
-- [Bodyparser]('http://www.expressjs.com/en/resources/middleware/body-parser.html)
-- [Chance]('https://www.chancejs.com/')
-- [MD5]('https://www.npmjs.com/package/md5')
+- [Node.js](https://www.nodejs.org/en/)
+- [Express](https://www.expressjs.com/)
+- [Bodyparser](http://www.expressjs.com/en/resources/middleware/body-parser.html)
+- [Chance](https://www.chancejs.com/)
+- [MD5](https://www.npmjs.com/package/md5)
 
 ## Dev Dependencies used
 
-- [Nodemon]('https://www.npmjs.com/package/nodemon')
+- [Nodemon](https://www.npmjs.com/package/nodemon)
 
 ## Final Product <a name='final'></a>
 
