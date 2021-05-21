@@ -28,6 +28,25 @@ body {
   width: 90%;
 }
 
+#toggle-btn {
+  background-color: #4056a1;
+  border-radius: 50%;
+  bottom: 4rem;
+  color: #fff;
+  display: none;
+  font-size: 1.5em;
+  height: 81px;
+  padding-top: 22px;
+  position: sticky;
+  float: right;
+  text-align: center;
+  width: 81px;
+}
+
+#toggle-btn:hover {
+  background-color: #506bc5;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
