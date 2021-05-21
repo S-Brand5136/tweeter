@@ -34,7 +34,7 @@ article.tweet {
 
     .tweeter-handle {
       color: layout.$primary;
-      font-weight: 600;
+      font-weight: layout.$bold-font;
       font-size: 18px;
       letter-spacing: 0.1px;
       opacity: 0.3;

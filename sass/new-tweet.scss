@@ -45,7 +45,7 @@ section.new-tweet {
    }
    
     label {
-     font-weight: 600;
+     font-weight: layout.$bold-font;
    }
 
    textarea#tweet-text {
@@ -53,7 +53,7 @@ section.new-tweet {
      border-bottom: 4px solid layout.$border-primary;
      background-color: inherit;
      font-size: 18px;
-     font-weight: 600;
+     font-weight: layout.$bold-font;
      outline: none;
      overflow-y: auto;
      resize: none;
