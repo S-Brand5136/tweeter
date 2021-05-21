@@ -101,6 +101,7 @@ nav i.icon {
   animation: 1.2s infinite alternate hover;
   color: #ff4500;
   font-size: 1.3rem;
+  position: relative;
 }
 nav i.icon:hover {
   cursor: pointer;

@@ -26,6 +26,7 @@ nav {
     animation: 1.2s infinite alternate hover;
     color: layout.$highlight;
     font-size: 1.3rem;
+    position: relative;
   }
 
   i.icon:hover {
