@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone. The front-end was built during my 4th week at [Lighthouse Labs]('https://www.lighthouselabs.ca/')
+Tweeter 🐦 is a simple, single-page Twitter clone. The front-end was built during my 4th week at [Lighthouse Labs]('https://www.lighthouselabs.ca/')
 
 This project was created to practice my HTML, CSS, JS, jQuery and AJAX front-end skills.
 
@@ -26,11 +26,34 @@ This project was created to practice my HTML, CSS, JS, jQuery and AJAX front-end
 
 ## Final Product <a name='final'></a>
 
+### Desktop View
+
+!["Screenshot of desktop view"](https://github.com/S-Brand5136/tweeter/blob/master/docs/desktop-view.png)
+
+### Mobile View
+
+!["Screenshot of mobile view"](https://github.com/S-Brand5136/tweeter/blob/master/docs/mobile-view.png)
+
 ## Installation <a name='installation'></a>
 
 1. Fork this repository, then clone your fork of this repository.
+
+```bash
+  $ git clone git@github.com:S-Brand5136/tweeter.git
+```
+
 2. Install dependencies using the `npm install` command.
+
+```bash
+  $ npm install
+```
+
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+
+```bash
+  $ npm run local
+```
+
 4. Go to <http://localhost:8080/> in your browser.
 
 ## SASS Script <a name='script'></a>
@@ -50,3 +73,5 @@ Once its installed go to the root directory and run
 This will transpile all of the sass changes that are made on the spot
 
 ## How to use <a name='howtousec'></a>
+
+Once the project has been installed, and is up and running on your machine. Click the top right button to show the tweet form. Add text to your tweet and click the button on the bottom left below the textarea, and then watch your new tweet appear 🐦
