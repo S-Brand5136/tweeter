@@ -100,7 +100,6 @@ nav div {
 nav i.icon {
   animation: 1.2s infinite alternate hover;
   color: #ff4500;
-  position: relative;
   font-size: 1.3rem;
 }
 nav i.icon:hover {
