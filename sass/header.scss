@@ -1,14 +1,11 @@
 @use 'layout';
 
 .site-header {
-  align-items: center;
+  @include layout.d-flexV-align(flex, center, center, column);
   background-image: url('../images/header-background.png');
   background-color: layout.$bg-secondary;
   color: layout.$font-highlight;
-  display: flex;
-  flex-direction: column;
   height: 400px;
-  justify-content: center;
   margin-bottom: 3rem;
   width: 100%;
 

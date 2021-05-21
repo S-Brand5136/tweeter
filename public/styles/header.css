@@ -72,14 +72,14 @@ body {
   }
 }
 .site-header {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-image: url("../images/header-background.png");
   background-color: #c26400;
   color: #fff;
-  display: flex;
-  flex-direction: column;
   height: 400px;
-  justify-content: center;
   margin-bottom: 3rem;
   width: 100%;
 }

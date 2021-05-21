@@ -86,9 +86,10 @@ article.tweet section {
   padding: 0 1em 0 1em;
 }
 article.tweet header {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-direction: initial;
   padding: 16px;
 }
 article.tweet header span.username {

@@ -1,12 +1,10 @@
 @use 'layout';
 
 nav {
-  align-items: center;
+  @include layout.d-flexV-align(flex, center, space-between, initial);
   background-color: layout.$primary;
   color: layout.$font-highlight;
-  display: flex;
   height: 120px;
-  justify-content: space-between;
   width: 100%;
   padding: 1em 1.5em 0 1.5em;
   z-index: 1;
@@ -19,11 +17,9 @@ nav {
   }
 
   div {
-   align-items: center;
-   display: flex;
-   flex-direction: column;
-   font-family: layout.$primay-font;
-   font-size: .7em;
+    @include layout.d-flexV-align(flex, center, initial, column);
+    font-family: layout.$primay-font;
+    font-size: .7em;
   }
   
   i.icon {

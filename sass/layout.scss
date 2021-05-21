@@ -37,6 +37,14 @@ $border-primary: #545149;
 $border-secondary: rgba(64, 86, 161, 0.5);
 $tweet-hover: rgba(64, 86, 161, 0.3);
 
+// mixins
+@mixin d-flexV-align($display, $align, $justify, $direction) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
 body {
   background-color: $bg-primary;
   color: $font-primary;

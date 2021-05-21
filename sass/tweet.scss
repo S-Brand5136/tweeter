@@ -16,9 +16,7 @@ article.tweet {
   
   /*  HEADER RULES  */
   header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    @include layout.d-flexV-align(flex, center, space-between, initial);
     padding: 16px;
     
     span.username {

@@ -72,12 +72,13 @@ body {
   }
 }
 nav {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
   background-color: #4056a1;
   color: #fff;
-  display: flex;
   height: 120px;
-  justify-content: space-between;
   width: 100%;
   padding: 1em 1.5em 0 1.5em;
   z-index: 1;
@@ -89,8 +90,9 @@ nav span {
   font-size: 1.5em;
 }
 nav div {
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: initial;
   flex-direction: column;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.7em;

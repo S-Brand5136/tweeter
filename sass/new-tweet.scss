@@ -3,11 +3,10 @@
 /* MAIN RULES */
 
 section.new-tweet {
-  display: none;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  @include layout.d-flexV-align(none, center, center, column);
   margin-bottom: 2.5em;
+
+
   
   h3#error-message {
     background-color: layout.$error;
