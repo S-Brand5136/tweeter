@@ -43,10 +43,10 @@ $tweet-hover: rgba(64, 86, 161, 0.3);
 
 // mixins
 @mixin d-flexV-align($display, $align, $justify, $direction) {
-  display: $display;
   align-items: $align;
-  justify-content: $justify;
+  display: $display;
   flex-direction: $direction;
+  justify-content: $justify;
 }
 
 body {
@@ -57,9 +57,8 @@ body {
 }
 
 .container {
-  width: 90%;
-
   margin: 0 auto;
+  width: 90%;
 }
 
 /*
@@ -67,6 +66,8 @@ body {
  */
 
 //  Media Queries for responsive design
+
+// Desktop only
 @media only screen and (min-width: 1024px) {
   div > i.icon {
     animation: none;
@@ -90,6 +91,7 @@ body {
   }
 }
 
+// All none desktop Screens
 @media only screen and (max-width: 1023px) {
   body > nav {
     background-color: transparent;

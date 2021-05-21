@@ -24,8 +24,8 @@ body {
 }
 
 .container {
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
 }
 
 /*
@@ -73,10 +73,10 @@ body {
 }
 /* MAIN RULES */
 section.new-tweet {
-  display: none;
   align-items: center;
-  justify-content: center;
+  display: none;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 2.5em;
 }
 section.new-tweet h3#error-message {

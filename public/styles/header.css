@@ -24,8 +24,8 @@ body {
 }
 
 .container {
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
 }
 
 /*
@@ -72,10 +72,10 @@ body {
   }
 }
 .site-header {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   background-image: url("../images/header-background.png");
   background-color: #c26400;
   color: #fff;

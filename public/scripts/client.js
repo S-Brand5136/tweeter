@@ -94,6 +94,7 @@ $(document).ready(() => {
     return div.innerHTML;
   };
 
+  // click handler to show or remove tweet form
   $('#compose-tweet').on('click', function () {
     if (!$('.new-tweet').is(':hidden')) {
       return $('.new-tweet').slideUp();
