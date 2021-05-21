@@ -103,5 +103,19 @@ $(document).ready(() => {
     $('#tweet-text').focus();
   });
 
+  $('#toggle-btn').on('click', function () {
+    $(window).scrollTop(0);
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop()) {
+      $('#toggle-btn').show();
+      $('#compose-container').hide();
+    } else {
+      $('#toggle-btn').hide();
+      $('#compose-container').show();
+    }
+  });
+
   loadTweets();
 });
