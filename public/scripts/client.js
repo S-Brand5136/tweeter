@@ -103,10 +103,12 @@ $(document).ready(() => {
     $('#tweet-text').focus();
   });
 
+  // click handler to jump back to the top of the page on click
   $('#toggle-btn').on('click', function () {
     $(window).scrollTop(0);
   });
 
+  // function to monitor scrolling, show and hide elements accordingly
   $(window).scroll(function () {
     if ($(this).scrollTop()) {
       $('#toggle-btn').show();
