@@ -5,26 +5,25 @@
  */
 
 $(document).ready(() => {
-  // POST: tweet submission to /tweets
-  $('form').on('submit', function(event) {
+  // POST: validates user input then, posts tweet submission to /tweets
+  $('form').on('submit', function (event) {
     event.preventDefault();
     const $textarea = $(this).children('textarea');
 
-    
     if ($textarea.val().length > 140) {
       $('#error-message').text('Error. Your tweet is too long!');
       return $('#error-message').slideDown('slow');
     }
-    
+
     if ($textarea.val().length === 0) {
       $('#error-message').text('Error. Your tweet is too short!');
       return $('#error-message').slideDown('slow');
     }
-    
+
     if (!$('#error-message').is(':hidden')) {
       $('#error-message').slideUp();
     }
-    
+
     const $serializedData = $(this).serialize();
     $textarea.val('');
     $(this).children().find('output').val(140);
@@ -89,19 +88,19 @@ $(document).ready(() => {
   };
 
   // function to escape harmful tweet text
-  const escape = function(str) {
+  const escape = function (str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
-  $('#compose-tweet').on('click', function() {
+  $('#compose-tweet').on('click', function () {
     if (!$('.new-tweet').is(':hidden')) {
       return $('.new-tweet').slideUp();
     }
     $('.new-tweet').slideDown();
     $('#tweet-text').focus();
-  })
+  });
 
   loadTweets();
 });

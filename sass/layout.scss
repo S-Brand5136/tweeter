@@ -65,47 +65,46 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- 
+
 //  Media Queries for responsive design
- @media only screen and (min-width: 1024px) {
-
-   div > i.icon {
-     animation: none;
-    }
-    
-    header.site-header {
-      float: left;
-      margin: 10em 0 0 5rem;
-      width: 25%;
-      min-width: 300px;
-    }
-    
-    main.container {
-      float: right;
-      margin: 10em 5rem 0 0;
-      width: 50%;
-    }
-    
-    main > section.new-tweet {
-      display: block;
-    }
+@media only screen and (min-width: 1024px) {
+  div > i.icon {
+    animation: none;
   }
-  
-  @media only screen and (max-width: 1023px) {
-    body > nav {
-      background-color: transparent;
-    }
 
-    nav > img {
-      height: 200px;
-    }
-
-    header.site-header { 
-      padding-top: 140px;
-      height: 540px;
-    }
-
-    section.new-tweet > span#error-message {
-      font-size: 12px;
-    }
+  header.site-header {
+    float: left;
+    margin: 10em 0 0 5rem;
+    width: 25%;
+    min-width: 300px;
   }
+
+  main.container {
+    float: right;
+    margin: 10em 5rem 0 0;
+    width: 50%;
+  }
+
+  main > section.new-tweet {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body > nav {
+    background-color: transparent;
+  }
+
+  nav > img {
+    height: 200px;
+  }
+
+  header.site-header {
+    padding-top: 140px;
+    height: 540px;
+  }
+
+  section.new-tweet > span#error-message {
+    font-size: 12px;
+  }
+}

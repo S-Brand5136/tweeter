@@ -21,27 +21,25 @@ nav {
     font-family: layout.$primay-font;
     font-size: 1rem;
   }
-  
+
   i.icon {
     animation: 1.2s infinite alternate hover;
     color: layout.$highlight;
     position: relative;
     font-size: 1.3rem;
   }
-  
+
   i.icon:hover {
     cursor: pointer;
   }
-  
+
   @keyframes hover {
     from {
       top: 8px;
     }
-  
+
     to {
       top: 0;
     }
   }
 }
-
-

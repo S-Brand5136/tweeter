@@ -8,25 +8,25 @@ article.tweet {
   flex-direction: column;
   margin-bottom: 1em;
   padding: 8px;
-  
+
   section {
     border-bottom: 4px solid layout.$border-primary;
     padding: 0 1em 0 1em;
   }
-  
+
   /*  HEADER RULES  */
   header {
     @include layout.d-flexV-align(flex, center, space-between, initial);
     padding: 1rem;
-    
+
     span.username {
       margin-left: 0.5em;
     }
-    
+
     div {
       align-items: center;
       display: flex;
-      
+
       img#profile-img {
         height: 50px;
       }
@@ -40,7 +40,6 @@ article.tweet {
       opacity: 0.3;
     }
   }
-  
 
   /*  FOOTER RULES  */
   footer {
@@ -48,14 +47,14 @@ article.tweet {
     font-size: 1rem;
     justify-content: space-between;
     padding: 12px 30px;
-    
+
     button.btn-icon {
       border: none;
       color: layout.$primary;
       font-size: 1rem;
       transition: color 0.2s ease-in;
     }
-    
+
     button.btn-icon:hover {
       color: layout.$bg-secondary;
       cursor: pointer;

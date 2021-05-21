@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $('#tweet-text').on('input', function() {
+  $('#tweet-text').on('input', function () {
     const $textAreaValue = $(this).val().length;
     const $output = $(this).siblings().find('output');
     const remaingChars = 140 - $textAreaValue;

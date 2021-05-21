@@ -6,8 +6,6 @@ section.new-tweet {
   @include layout.d-flexV-align(none, center, center, column);
   margin-bottom: 2.5em;
 
-
-  
   h3#error-message {
     background-color: layout.$error;
     color: white;
@@ -25,7 +23,7 @@ section.new-tweet {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+
     div {
       display: flex;
       font-family: layout.$secondary-font;
@@ -38,30 +36,27 @@ section.new-tweet {
         color: white;
         padding: 0.3rem 0.8rem 0.3rem 0.8rem;
       }
-      
+
       button.btn:focus {
         box-shadow: 0 0 0 4px layout.$border-secondary;
       }
-   }
-   
+    }
+
     label {
-     font-weight: layout.$bold-font;
-   }
+      font-weight: layout.$bold-font;
+    }
 
-   textarea#tweet-text {
-     border: none;
-     border-bottom: 4px solid layout.$border-primary;
-     background-color: inherit;
-     font-size: 1.1rem;
-     font-weight: layout.$bold-font;
-     outline: none;
-     overflow-y: auto;
-     resize: none;
-   }
+    textarea#tweet-text {
+      border: none;
+      border-bottom: 4px solid layout.$border-primary;
+      background-color: inherit;
+      font-size: 1.1rem;
+      font-weight: layout.$bold-font;
+      outline: none;
+      overflow-y: auto;
+      resize: none;
+    }
   }
-
-  
-
 }
 
 /* applied to output when textarea is invalid  */
