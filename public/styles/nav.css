@@ -95,12 +95,13 @@ nav div {
   justify-content: initial;
   flex-direction: column;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.7em;
+  font-size: 1rem;
 }
 nav i.icon {
   animation: 1.2s infinite alternate hover;
   color: #ff4500;
   position: relative;
+  font-size: 1.3rem;
 }
 nav i.icon:hover {
   cursor: pointer;

@@ -19,13 +19,14 @@ nav {
   div {
     @include layout.d-flexV-align(flex, center, initial, column);
     font-family: layout.$primay-font;
-    font-size: .7em;
+    font-size: 1rem;
   }
   
   i.icon {
     animation: 1.2s infinite alternate hover;
     color: layout.$highlight;
     position: relative;
+    font-size: 1.3rem;
   }
   
   i.icon:hover {

@@ -118,7 +118,7 @@ section.new-tweet form textarea#tweet-text {
   border: none;
   border-bottom: 4px solid #545149;
   background-color: inherit;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
   outline: none;
   overflow-y: auto;

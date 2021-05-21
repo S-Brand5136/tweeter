@@ -90,7 +90,7 @@ article.tweet header {
   align-items: center;
   justify-content: space-between;
   flex-direction: initial;
-  padding: 16px;
+  padding: 1rem;
 }
 article.tweet header span.username {
   margin-left: 0.5em;
@@ -105,20 +105,20 @@ article.tweet header div img#profile-img {
 article.tweet header .tweeter-handle {
   color: #4056a1;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.1rem;
   letter-spacing: 0.1px;
   opacity: 0.3;
 }
 article.tweet footer {
   display: flex;
-  font-size: 16px;
+  font-size: 1rem;
   justify-content: space-between;
   padding: 12px 30px;
 }
 article.tweet footer button.btn-icon {
   border: none;
   color: #4056a1;
-  font-size: 16px;
+  font-size: 1rem;
   transition: color 0.2s ease-in;
 }
 article.tweet footer button.btn-icon:hover {

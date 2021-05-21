@@ -17,7 +17,7 @@ article.tweet {
   /*  HEADER RULES  */
   header {
     @include layout.d-flexV-align(flex, center, space-between, initial);
-    padding: 16px;
+    padding: 1rem;
     
     span.username {
       margin-left: 0.5em;
@@ -35,7 +35,7 @@ article.tweet {
     .tweeter-handle {
       color: layout.$primary;
       font-weight: layout.$bold-font;
-      font-size: 18px;
+      font-size: 1.1rem;
       letter-spacing: 0.1px;
       opacity: 0.3;
     }
@@ -45,14 +45,14 @@ article.tweet {
   /*  FOOTER RULES  */
   footer {
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
     justify-content: space-between;
     padding: 12px 30px;
     
     button.btn-icon {
       border: none;
       color: layout.$primary;
-      font-size: 16px;
+      font-size: 1rem;
       transition: color 0.2s ease-in;
     }
     
