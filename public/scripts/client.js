@@ -10,22 +10,24 @@ $(document).ready(() => {
     event.preventDefault();
     const $textarea = $(this).children('textarea');
 
+    
     if ($textarea.val().length > 140) {
       $('#error-message').text('Error. Your tweet is too long!');
       return $('#error-message').slideDown('slow');
     }
-
+    
     if ($textarea.val().length === 0) {
       $('#error-message').text('Error. Your tweet is too short!');
       return $('#error-message').slideDown('slow');
     }
-
+    
     if (!$('#error-message').is(':hidden')) {
       $('#error-message').slideUp();
     }
-
+    
     const $serializedData = $(this).serialize();
     $textarea.val('');
+    $(this).children().find('output').val(140);
 
     $.ajax({ url: '/tweets', method: 'POST', data: $serializedData })
       .then(() => {
